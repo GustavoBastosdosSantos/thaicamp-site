@@ -1,0 +1,180 @@
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Botões */
+.nav-link {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+/* Botão "Entre em Contato" */
+.contato a {
+    background: linear-gradient(45deg, #7d3cff, #5a2db2);
+}
+
+.contato a:hover {
+    background: linear-gradient(45deg, #5a2db2, #7d3cff);
+    transform: scale(1.05);
+}
+
+/* Logo */
+.logo {
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão "Nossos Planos" */
+.planos a {
+    background: linear-gradient(45deg, #7d3cff, #5a2db2);
+}
+
+.planos a:hover {
+    background: linear-gradient(45deg, #5a2db2, #7d3cff);
+    transform: scale(1.05);
+}
+
+/* Conteúdo Principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 30px;
+    justify-content: center;
+}
+
+/* Seção "Sobre a Academia" */
+.sobre-academia {
+    flex: 1 1 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-academia h2 {
+    margin-bottom: 15px;
+}
+
+/* Seção "Imagens do Espaço" */
+.imagens-espaco {
+    flex: 1 1 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o título */
+}
+
+/* Layout Flexbox para os professores */
+.imagens-espaco .professores-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Permite quebrar a linha caso necessário */
+}
+
+/* Estilo individual de cada professor */
+.imagens-espaco div {
+    text-align: center;
+    flex: 1; /* Distribui os elementos igualmente */
+    max-width: 250px; /* Define uma largura máxima para evitar exageros */
+}
+
+/* Imagens */
+.imagens-espaco img {
+    width: 200px; /* Define um tamanho padrão para as imagens */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.imagens-espaco img:hover {
+    transform: scale(1.03);
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 20px;
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #7d3cff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #888;
+}

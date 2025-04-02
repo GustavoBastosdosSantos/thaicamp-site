@@ -84,7 +84,21 @@ main {
     border-radius: 10px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    
 }
+
+
+.sobre-academia {
+        background-image: url('/0aa41ed8-006a-47dc-a5d9-5f49f11c90d5.jpg'); /* Caminho da imagem */
+        background-size: cover;  /* Ajusta a imagem para cobrir toda a seção */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Impede repetição */
+        padding: 50px; /* Ajuste o espaço interno para o conteúdo */
+        color: whitesmoke; /* Deixa o texto branco para contraste */
+        font-size: 25px;
+      }
+
 
 .sobre-academia h2 {
     margin-bottom: 15px;
@@ -92,40 +106,43 @@ main {
 
 /* Seção "Imagens do Espaço" */
 .imagens-espaco {
-    flex: 1 1 300px;
     padding: 30px;
     border-radius: 10px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centraliza o título */
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Espaçamento externo para a seção */
 }
 
-/* Layout Flexbox para os professores */
-.imagens-espaco .professores-container {
+/* Layout Flexbox para as imagens */
+.imagens-espaco .imagens-container {
     display: flex;
     justify-content: center; /* Centraliza os itens */
-    gap: 20px; /* Espaçamento entre os elementos */
-    flex-wrap: wrap; /* Permite quebrar a linha caso necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que quebrem linha caso necessário */
 }
 
-/* Estilo individual de cada professor */
+/* Estilo individual de cada imagem */
 .imagens-espaco div {
     text-align: center;
-    flex: 1; /* Distribui os elementos igualmente */
-    max-width: 250px; /* Define uma largura máxima para evitar exageros */
+    flex: 1 1 200px; /* Tamanho flexível com uma base mínima de 200px */
+    max-width: 250px; /* Largura máxima */
+    box-sizing: border-box; /* Para garantir que o padding não afete a largura total */
 }
 
-/* Imagens */
+/* Estilo das imagens */
 .imagens-espaco img {
-    width: 200px; /* Define um tamanho padrão para as imagens */
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+    width: 100%; /* Faz as imagens ocuparem toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Efeito de transição */
 }
 
+/* Efeito de zoom na imagem */
 .imagens-espaco img:hover {
-    transform: scale(1.03);
+    transform: scale(1.05); /* Aumenta um pouco o tamanho da imagem */
 }
+
 
 /* Rodapé */
 footer {
@@ -177,4 +194,63 @@ footer {
     border-top: 1px solid #444;
     font-size: 14px;
     color: #888;
+}
+
+/* BOTÃO DO INSTAGRAM */
+.instagram-container {
+    margin-top: 20px;
+}
+
+.instagram-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    color: palevioletred;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.instagram-button:hover {
+    background: #C13584;
+    transform: scale(1.05);
+}
+/* BOTÃO DO Whatsapp*/
+.wpp-container {
+    margin-top: 20px;
+}
+
+.wpp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    color: green;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wpp-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.wpp-button:hover {
+    background: green;
+    transform: scale(1.05);
 }
